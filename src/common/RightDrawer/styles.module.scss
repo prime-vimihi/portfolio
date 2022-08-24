@@ -1,0 +1,31 @@
+.rightDrawer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.root {
+  .paper {
+    position: relative;
+    min-width: 300px;
+    max-height: 98vh;
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 20px;
+
+    .drawerHeader {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 30px;
+      width: 100%;
+      .close-icon {
+        font-size: 36px;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}

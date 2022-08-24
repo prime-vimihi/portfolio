@@ -1,8 +1,15 @@
+@import url('./assets/fonts/EncodeSans/stylesheet.css');
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Encode Sans';
+  font-size: 14px;
+  box-sizing: border-box; /* Required */
+  line-height: 1.4; /* Required */
+  color: #333333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +17,26 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: #333333 #637381;
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  background-color: #637381;
+  border-radius: 5px;
+  /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #333333;
+  border-radius: 5px;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
