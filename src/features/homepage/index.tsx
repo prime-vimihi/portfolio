@@ -8,7 +8,8 @@ import AWS from 'assets/images/technology-icons/aws.png';
 import Flutter from 'assets/images/technology-icons/flutter.png';
 import NodeJS from 'assets/images/technology-icons/nodejs-logo.png';
 import ReactJS from 'assets/images/technology-icons/reactjs.png';
-import React from 'react';
+import React, { useState } from 'react';
+import ProjectDetails from './project-details';
 import classes from './styles.module.scss';
 
 export const Line = () => {
@@ -21,6 +22,14 @@ export const Line = () => {
 };
 
 const Homepage = () => {
+  const [isOpenProjectDetails, setIsOpenProjectDetails] = useState(false);
+  const openProjectDetailsHandler = () => {
+    setIsOpenProjectDetails(true);
+  };
+  const closeProjectDetailsHandler = () => {
+    setIsOpenProjectDetails(false);
+  };
+
   return (
     <div className={classes['homepage']}>
       <div className={classes['homepage-wrapper']}>
@@ -51,7 +60,10 @@ const Homepage = () => {
             </p>
             <Line />
             <p className={classes['section-description']}>management system</p>
-            <div className={classes['explore']}>
+            <div
+              className={classes['explore']}
+              onClick={openProjectDetailsHandler}
+            >
               Explore
               <img src={Arrow} alt='Arrow' className={classes['arrow-right']} />
             </div>
@@ -114,6 +126,12 @@ const Homepage = () => {
           </div>
         </div>
       </div>
+
+      {/* PROJECT DETAILS MODAL */}
+      <ProjectDetails
+        isOpen={isOpenProjectDetails}
+        onClose={closeProjectDetailsHandler}
+      />
     </div>
   );
 };
