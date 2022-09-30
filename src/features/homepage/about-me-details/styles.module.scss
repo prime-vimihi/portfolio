@@ -1,0 +1,156 @@
+.about-me-details {
+  position: relative;
+  overflow-x: hidden;
+  .slogan {
+    position: fixed;
+    top: 450px;
+    right: -360px;
+    text-transform: capitalize;
+    transform: rotate(-90deg);
+    font-weight: 700;
+    font-size: 120px;
+    color: rgba(255, 255, 255, 0.1);
+    z-index: -3;
+  }
+  .avatar {
+    position: absolute;
+    top: -40px;
+    right: -250px;
+    width: 824px;
+    object-fit: contain;
+    border-radius: 100%;
+    border: solid white 5px;
+    transform: scaleX(-1);
+    z-index: -2;
+  }
+  .wrapper {
+    width: 100%;
+    color: white;
+    padding-left: 60px;
+    padding-right: 60px;
+    .title-wrapper {
+      padding-left: 40px;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 72px;
+      margin-bottom: 200px;
+      .full-name {
+        font-weight: 700;
+        font-size: 36px;
+        color: #7cd8ff;
+      }
+      .short-name {
+        font-weight: 700;
+        font-size: 220px;
+        line-height: 190px;
+        margin-top: -20px;
+      }
+      .job-title {
+        font-weight: 700;
+        font-size: 36px;
+        color: #ebffca;
+      }
+      .year-of-exp {
+        width: 100%;
+        text-align: right;
+        font-weight: 400;
+        font-size: 24px;
+        padding-right: 10px;
+      }
+    }
+    .section {
+      width: 100%;
+      margin-bottom: 230px;
+      .section-title {
+        font-weight: 700;
+        font-size: 120px;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 44px;
+        text-transform: uppercase;
+      }
+      .section-wai-description {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Patrick Hand';
+        .wai-item {
+          font-weight: 400;
+          font-size: 28px;
+          margin: 7.5px 0;
+        }
+      }
+
+      .domain-wrapper {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 110px;
+
+        .domain-item {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin: 80px 0;
+
+          .domain-image {
+            width: 188px;
+            object-fit: contain;
+            margin-right: 70px;
+          }
+          .domain-name {
+            font-weight: 700;
+            font-size: 48px;
+            color: #9ebd90;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .domain-description {
+              font-weight: 400;
+              font-size: 36px;
+            }
+          }
+        }
+      }
+
+      .strength-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 80px;
+        border-radius: 20px;
+        background: #ffffff;
+        box-shadow: 0px 4px 32px rgba(119, 115, 115, 0.5);
+
+        .section-title {
+          color: #bd396c;
+        }
+
+        .strength-items-wrapper {
+          display: flex;
+          flex-direction: column;
+
+          .strength-item {
+            display: flex;
+            flex-direction: column;
+            margin: 30px 0;
+
+            .strength-item-title {
+              font-weight: 700;
+              font-size: 64px;
+              margin-bottom: 10px;
+              color: #716687;
+              text-transform: uppercase;
+            }
+
+            .strength-item-description {
+              font-weight: 400;
+              font-size: 24px;
+              color: #333333;
+            }
+          }
+        }
+      }
+    }
+  }
+}

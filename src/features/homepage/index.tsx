@@ -9,6 +9,7 @@ import Flutter from 'assets/images/technology-icons/flutter.png';
 import NodeJS from 'assets/images/technology-icons/nodejs-logo.png';
 import ReactJS from 'assets/images/technology-icons/reactjs.png';
 import React, { useState } from 'react';
+import AboutMeDetails from './about-me-details';
 import ProjectDetails from './project-details';
 import classes from './styles.module.scss';
 
@@ -132,6 +133,9 @@ const Homepage = () => {
         isOpen={isOpenProjectDetails}
         onClose={closeProjectDetailsHandler}
       />
+
+      {/* ABOUT ME DETAILS */}
+      <AboutMeDetails />
     </div>
   );
 };

@@ -1,4 +1,6 @@
 @import url('./assets/fonts/EncodeSans/stylesheet.css');
+@import url('./assets/fonts/PatrickHand/stylesheet.css');
+
 html {
   scroll-behavior: smooth;
 }
