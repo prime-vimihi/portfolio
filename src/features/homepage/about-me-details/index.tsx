@@ -6,11 +6,29 @@ import DomainManagement from 'assets/images/domain-management.png';
 import DomainEcommerce from 'assets/images/domain-ecommerce.png';
 import DomainWebsite from 'assets/images/domain-website.png';
 import DomainFinancial from 'assets/images/domain-financial.png';
+import Slider from 'react-slick';
 
 const AboutMeDetails = () => {
+  const settings = {
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    // fade: true,
+    speed: 3000,
+    // pauseOnHover: false,
+    cssEase: 'linear',
+    // adaptiveHeight: true,
+    // variableWidth: true,
+    className: classes.toolSlider,
+    arrows: false,
+    // dots: true,
+    // draggable: true,
+  };
   return (
     <RightDrawer
-      isOpen={false}
+      isOpen={true}
       width='1200px'
       onClose={() => {}}
       backgroundColor='linear-gradient(180deg, #0C2144 0%, #9A2F76 47.43%, #FD4C5B 100%)'
@@ -124,9 +142,71 @@ const AboutMeDetails = () => {
             </div>
           </div>
         </div>
-        {/* SECTION 4 - SPECIAL CLIENTS */}
+        {/* SECTION 4 - TOOLS*/}
         <div className={classes['section']}>
-          <p className={classes['section-title']}>Special Clients</p>
+          <p className={classes['section-title']}>Tools</p>
+          <div className={classes['tools-wrapper']}>
+            <div className={classes['tools-box']}>
+              <Slider {...settings}>
+                <div className={classes['tool-img-wrapper']}>
+                  <img
+                    src={DomainEcommerce}
+                    alt='tool'
+                    className={classes['tool-img']}
+                  />
+                </div>
+                <div>
+                  <img
+                    src={DomainFinancial}
+                    alt='tool'
+                    className={classes['tool-img']}
+                  />
+                </div>
+                <div>
+                  <img
+                    src={DomainManagement}
+                    alt='tool'
+                    className={classes['tool-img']}
+                  />
+                </div>
+                <div>
+                  <img
+                    src={DomainWebsite}
+                    alt='tool'
+                    className={classes['tool-img']}
+                  />
+                </div>
+                <div className={classes['tool-img-wrapper']}>
+                  <img
+                    src={DomainEcommerce}
+                    alt='tool'
+                    className={classes['tool-img']}
+                  />
+                </div>
+                <div>
+                  <img
+                    src={DomainFinancial}
+                    alt='tool'
+                    className={classes['tool-img']}
+                  />
+                </div>
+                <div>
+                  <img
+                    src={DomainManagement}
+                    alt='tool'
+                    className={classes['tool-img']}
+                  />
+                </div>
+                <div>
+                  <img
+                    src={DomainWebsite}
+                    alt='tool'
+                    className={classes['tool-img']}
+                  />
+                </div>
+              </Slider>
+            </div>
+          </div>
         </div>
       </div>
     </RightDrawer>

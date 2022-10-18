@@ -1,5 +1,7 @@
 @import url('./assets/fonts/EncodeSans/stylesheet.css');
 @import url('./assets/fonts/PatrickHand/stylesheet.css');
+@import url('~slick-carousel/slick/slick.css');
+@import url('~slick-carousel/slick/slick-theme.css');
 
 html {
   scroll-behavior: smooth;
