@@ -31,6 +31,15 @@ const Homepage = () => {
     setIsOpenProjectDetails(false);
   };
 
+  const [isOpenAboutMe, setIsOpenAboutMe] = useState(false);
+
+  const openAboutMeHandler = () => {
+    setIsOpenAboutMe(true);
+  };
+  const closeAboutMeHandler = () => {
+    setIsOpenAboutMe(false);
+  };
+
   return (
     <div className={classes['homepage']}>
       <div className={classes['homepage-wrapper']}>
@@ -91,7 +100,7 @@ const Homepage = () => {
             <p className={classes['section-description']}>
               love analysis, coding, <br /> and much more
             </p>
-            <div className={classes['explore']}>
+            <div className={classes['explore']} onClick={openAboutMeHandler}>
               More Details
               <img src={Arrow} alt='Arrow' className={classes['arrow-right']} />
             </div>
@@ -135,7 +144,7 @@ const Homepage = () => {
       />
 
       {/* ABOUT ME DETAILS */}
-      <AboutMeDetails />
+      <AboutMeDetails isOpen={isOpenAboutMe} onClose={closeAboutMeHandler} />
     </div>
   );
 };

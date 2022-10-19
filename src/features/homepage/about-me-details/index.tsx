@@ -6,9 +6,22 @@ import DomainManagement from 'assets/images/domain-management.png';
 import DomainEcommerce from 'assets/images/domain-ecommerce.png';
 import DomainWebsite from 'assets/images/domain-website.png';
 import DomainFinancial from 'assets/images/domain-financial.png';
+import Figma from 'assets/images/technology-icons/figma.png';
+import Confluence from 'assets/images/technology-icons/confluence.png';
+import DrawIO from 'assets/images/technology-icons/drawio.png';
+import MindManager from 'assets/images/technology-icons/mind-manager.png';
+import Jira from 'assets/images/technology-icons/jira.png';
+import ClickUp from 'assets/images/technology-icons/clickup.png';
+import Slack from 'assets/images/technology-icons/slack.png';
+import Teams from 'assets/images/technology-icons/teams.png';
 import Slider from 'react-slick';
 
-const AboutMeDetails = () => {
+interface Props {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+const AboutMeDetails: React.FC<Props> = (props) => {
   const settings = {
     infinite: true,
     slidesToShow: 6,
@@ -28,9 +41,9 @@ const AboutMeDetails = () => {
   };
   return (
     <RightDrawer
-      isOpen={true}
+      isOpen={props.isOpen}
       width='1200px'
-      onClose={() => {}}
+      onClose={props.onClose}
       backgroundColor='linear-gradient(180deg, #0C2144 0%, #9A2F76 47.43%, #FD4C5B 100%)'
       classes={classes['about-me-details']}
     >
@@ -149,60 +162,44 @@ const AboutMeDetails = () => {
             <div className={classes['tools-box']}>
               <Slider {...settings}>
                 <div className={classes['tool-img-wrapper']}>
+                  <img src={Jira} alt='tool' className={classes['tool-img']} />
+                </div>
+                <div>
                   <img
-                    src={DomainEcommerce}
+                    src={Confluence}
                     alt='tool'
                     className={classes['tool-img']}
                   />
                 </div>
                 <div>
-                  <img
-                    src={DomainFinancial}
-                    alt='tool'
-                    className={classes['tool-img']}
-                  />
+                  <img src={Figma} alt='tool' className={classes['tool-img']} />
                 </div>
                 <div>
                   <img
-                    src={DomainManagement}
-                    alt='tool'
-                    className={classes['tool-img']}
-                  />
-                </div>
-                <div>
-                  <img
-                    src={DomainWebsite}
+                    src={DrawIO}
                     alt='tool'
                     className={classes['tool-img']}
                   />
                 </div>
                 <div className={classes['tool-img-wrapper']}>
                   <img
-                    src={DomainEcommerce}
+                    src={MindManager}
                     alt='tool'
                     className={classes['tool-img']}
                   />
                 </div>
                 <div>
                   <img
-                    src={DomainFinancial}
+                    src={ClickUp}
                     alt='tool'
                     className={classes['tool-img']}
                   />
                 </div>
                 <div>
-                  <img
-                    src={DomainManagement}
-                    alt='tool'
-                    className={classes['tool-img']}
-                  />
+                  <img src={Slack} alt='tool' className={classes['tool-img']} />
                 </div>
                 <div>
-                  <img
-                    src={DomainWebsite}
-                    alt='tool'
-                    className={classes['tool-img']}
-                  />
+                  <img src={Teams} alt='tool' className={classes['tool-img']} />
                 </div>
               </Slider>
             </div>
