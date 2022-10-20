@@ -44,6 +44,7 @@ const Homepage = () => {
     <div className={classes['homepage']}>
       <div className={classes['homepage-wrapper']}>
         {/* SECTION ONE */}
+        <div id='anchor-homepage' className={classes['anchor-section']}></div>
         <div className={classes['section-one']}>
           <p className={classes['section-title']}>
             Kai <br /> Nguyen
@@ -52,16 +53,13 @@ const Homepage = () => {
           <p className={classes['section-description']}>
             business analyst / <br /> frontend developer
           </p>
-          <a href='#anchor-section-two' className={classes['explore']}>
+          <a href='#anchor-projects' className={classes['explore']}>
             <img src={Arrow} alt='Arrow' className={classes['arrow']} />
             Explore
           </a>
         </div>
         {/* SECTION TWO - PROJECT */}
-        <div
-          id='anchor-section-two'
-          className={classes['anchor-section-two']}
-        ></div>
+        <div id='anchor-projects' className={classes['anchor-section']}></div>
         <div className={classes['section-two']}>
           <div className={classes['section-two-left']}>
             <p className={classes['section-sub-title']}>project /</p>
@@ -93,6 +91,7 @@ const Homepage = () => {
           </div>
         </div>
         {/* SECTION THREE - ABOUT ME */}
+        <div id='anchor-about-me' className={classes['anchor-section']}></div>
         <div className={classes['section-three']}>
           <div className={classes['section-three-left']}>
             <p className={classes['section-title']}>About Me</p>
@@ -114,6 +113,10 @@ const Homepage = () => {
           </div>
         </div>
         {/* SECTION FOUR - GET IN TOUCH */}
+        <div
+          id='anchor-get-in-touch'
+          className={classes['anchor-section']}
+        ></div>
         <div className={classes['section-four']}>
           <div className={classes['section-four-left']}>
             <p className={classes['section-title']}>Get In Touch</p>

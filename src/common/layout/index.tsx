@@ -36,20 +36,36 @@ const Layout: React.FC = (props) => {
       >
         <div className={classes['main-menu-wrapper']}>
           <div className={classes['main-menu-items']}>
-            <a href='/' className={classes['item']} data-replace='Homepage'>
+            <a
+              href='#anchor-homepage'
+              className={classes['item']}
+              data-replace='Homepage'
+              onClick={closeMainMenuHandler}
+            >
               <span>Homepage</span>
             </a>
             <a
-              href='#anchor-section-two'
+              href='#anchor-projects'
               className={classes['item']}
               data-replace='Project'
+              onClick={closeMainMenuHandler}
             >
               <span>Project</span>
             </a>
-            <a href='/' className={classes['item']} data-replace='About Me'>
+            <a
+              href='#anchor-about-me'
+              className={classes['item']}
+              data-replace='About Me'
+              onClick={closeMainMenuHandler}
+            >
               <span>About Me</span>
             </a>
-            <a href='/' className={classes['item']} data-replace='Get In Touch'>
+            <a
+              href='#anchor-get-in-touch'
+              className={classes['item']}
+              data-replace='Get In Touch'
+              onClick={closeMainMenuHandler}
+            >
               <span>Get In Touch</span>
             </a>
           </div>

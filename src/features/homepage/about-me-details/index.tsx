@@ -132,7 +132,7 @@ const AboutMeDetails: React.FC<Props> = (props) => {
               <div className={classes['strength-item']}>
                 <p className={classes['strength-item-title']}>Patient</p>
                 <p className={classes['strength-item-description']}>
-                  Never give up on any idea or project till i explore all
+                  Never give up on any idea or project till I explore all
                   solutions and options for it.
                 </p>
               </div>
@@ -141,6 +141,13 @@ const AboutMeDetails: React.FC<Props> = (props) => {
                 <p className={classes['strength-item-description']}>
                   Strong as UX/UI when making wireframe for both Web app and
                   Mobile app.
+                </p>
+              </div>
+              <div className={classes['strength-item']}>
+                <p className={classes['strength-item-title']}>Documentation</p>
+                <p className={classes['strength-item-description']}>
+                  Document always clear and in details. It's easy to understand
+                  and follow by everyone in the development team.
                 </p>
               </div>
               <div className={classes['strength-item']}>
