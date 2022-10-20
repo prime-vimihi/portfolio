@@ -70,8 +70,20 @@ const Layout: React.FC = (props) => {
             </a>
           </div>
           <div className={classes['social-networks']}>
-            <FontAwesomeIcon icon={faFacebook} className={classes.icon} />
-            <FontAwesomeIcon icon={faLinkedin} className={classes.icon} />
+            <a
+              href='https://www.facebook.com/vimihi/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <FontAwesomeIcon icon={faFacebook} className={classes.icon} />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/prime-kai/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              <FontAwesomeIcon icon={faLinkedin} className={classes.icon} />
+            </a>
           </div>
         </div>
       </RightDrawer>

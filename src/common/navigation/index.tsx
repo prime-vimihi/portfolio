@@ -16,16 +16,28 @@ const Navigation: React.FC<Props> = (props) => {
       </div>
       <div className={classes['right']}>
         <div className={classes['social-networks']}>
-          <img
-            src={FacebookIcon}
-            alt='Facebook'
-            className={classes['social-network-item']}
-          />
-          <img
-            src={LinkedInIcon}
-            alt='LinkedIn'
-            className={classes['social-network-item']}
-          />
+          <a
+            href='https://www.facebook.com/vimihi/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <img
+              src={FacebookIcon}
+              alt='Facebook'
+              className={classes['social-network-item']}
+            />
+          </a>
+          <a
+            href='https://www.linkedin.com/in/prime-kai/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <img
+              src={LinkedInIcon}
+              alt='LinkedIn'
+              className={classes['social-network-item']}
+            />
+          </a>
         </div>
         <img
           src={MenuIcon}
