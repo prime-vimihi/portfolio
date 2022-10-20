@@ -121,6 +121,16 @@ const ProjectDetails: React.FC<Props> = (props) => {
               </div>
             </div>
           </div>
+          {/* MORE PROJECTS */}
+          <div className={classes['more-projects']}>
+            <p className={classes['content-title']}>Explore More Projects</p>
+            <div className={classes['content']}>
+              <p className={classes['content-description']}>
+                I'm still building the page to show more projects that I've
+                worked on. Please hold on!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </RightDrawer>
